@@ -20,9 +20,7 @@ $(document).ready(function() {
       return complete;
     }
 
-    // If all required fields are filled
     if (formComplete() == true) {
-      // Create an object for the user's data
       var newFriend = {
           name: $("#name").val().trim(),
           sex: $("input:radio[name ='sex']:checked").val(),
@@ -39,20 +37,17 @@ $(document).ready(function() {
             $("input:radio[name ='Q10']:checked").val(),
           ]
         }
-      console.log(newFriend);
-      // Grab the URL of the website
+
+      $("#name").val('');
+      $("input:radio").prop('checked', false);
+
       var currentURL = window.location.origin;
 
-      // AJAX post the data to the friends API.
       $.post(currentURL + "/api/friends", newFriend, function(data) {
-        console.log(data);
-        console.log(data[1].name)
 
         // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-        $("#matchingName").html('Best Match' + data[1].name);
-        // $('#matchImg').attr("src", data.photo);
+        $("#matchingName").html('Best Match: ' + data.name + ' Sex: ' + data.sex);
 
-        // Show the modal with the best match
         $("#myModal").modal('toggle');
       });
     } else {
