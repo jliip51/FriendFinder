@@ -9,15 +9,213 @@
 </head>
 
 <body>
-  <h1 style="color: blue;">Friend Finder Home<h1>
+  <div class="container">
+    <header class="header">
+      <h1 class="text-center" style="color: red;">Friend Finder Survey<h1>
+      </header>
 
+      <div class="panel-default">
+        <div class="panel-heading">
+          <h2>Tell Us About Yourself</h2>
+        </div>
+        <div class="panel-body">
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" aria-labeledby="name" aria-describedby="name input" placeholder="Your Name">
+          </div>
+          <div class="form-check">
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="sex" id="Male" aria-labeledby="sex" aria-describedby="sex input" value="male">
+                Male
+              </label>
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="sex" id="Female" aria-labeledby="sex" aria-describedby="sex input" value="female">
+                Female
+              </label>
+            </div>
+          </div>
+          <br>
+          <h4>Select between 1 (Strongly Disagree) and 5 (Strongly Agree) for each of the following:</h4>
+          <fieldset class="form-group">
+            <label for="Question 1"><h4>Question 1: <span style="font-size: 16px">Consider myself and outgoing person.</span></h4></label>
+             <div class="form-check-inline">
+               <label class="form-check-label">
+                 <input type="radio" class="form-check-input" name="Q1" value="5"> 5-Stongly Agree </label>
+               <label class="form-check-label">
+                 <input type="radio" class="form-check-input" name="Q1" value="4"> 4-Agree </label>
+               <label class="form-check-label">
+                 <input type="radio" class="form-check-input" name="Q1" value="3"> 3-Mmmehhh </label>
+               <label class="form-check-label">
+                 <input type="radio" class="form-check-input" name="Q1" value="2"> 2-Disagree </label>
+               <label class="form-check-label">
+                 <input type="radio" class="form-check-input" name="Q1" value="1"> 1-Strongly Disagree </label>
+             </div>
+           </fieldset>
+          <fieldset class="form-group">
+            <label for="Question 2"><h4>Question 2: <span style="font-size: 16px">Most nights I stay in and watch movies or TV shows.</span>
+            </h4></label>
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="Q2" value="5"> 5-Stongly Agree </label>
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="Q2" value="4"> 4-Agree </label>
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="Q2" value="3"> 3-Mmmehhh </label>
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="Q2" value="2"> 2-Disagree </label>
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="Q2" value="1"> 1-Strongly Disagree </label>
+              </div>
+           </fieldset>
+           <fieldset class="form-group">
+             <label for="Question 3"><h4>Question 3: <span style="font-size: 16px">Spend my freetime time outdoors.</span></h4></label>
+               <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="Q3" value="5"> 5-Stongly Agree </label>
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="Q3" value="4">  4-Agree </label>
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="Q3" value="3"> 3-Mmmehhh </label>
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="Q3" value="2"> 2-Disagree </label>
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="Q3" value="1"> 1-Strongly Disagree </label>
+              </div>
+            </fieldset>
+            <fieldset class="form-group">
+              <label for="Question 4"><h4>Question 4: <span style="font-size: 16px">Read more books than I watch TV.</span></h4></label>
+              <div class="form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="Q4" value="5"> 5-Stongly Agree </label>
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="Q4" value="4"> 4-Agree </label>
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="Q4" value="3"> 3-Mmmehhh </label>
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="Q4" value="2"> 2-Disagree </label>
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="Q4" value="1"> 1-Strongly Disagree </label>
+                </div>
+            </fieldset>
+            <fieldset class="form-group">
+                 <label for="Question 5"><h4>Question 5: <span style="font-size: 16px">Enjoy cooking with friends.</span></h4></label>
+               <div class="form-check-inline">
+                 <label class="form-check-label">
+                   <input type="radio" class="form-check-input" name="Q5" value="5"> 5-Stongly Agree </label>
+                 <label class="form-check-label">
+                   <input type="radio" class="form-check-input" name="Q5" value="4"> 4-Agree </label>
+                 <label class="form-check-label">
+                   <input type="radio" class="form-check-input" name="Q5" value="3"> 3-Mmmehhh </label>
+                 <label class="form-check-label">
+                   <input type="radio" class="form-check-input" name="Q5" value="2"> 2-Disagree </label>
+                 <label class="form-check-label">
+                   <input type="radio" class="form-check-input" name="Q5" value="1"> 1-Strongly Disagree </label>
+               </div>
+           </fieldset>
+           <fieldset class="form-group">
+             <label for="Question 6"><h4>Question 6: <span style="font-size: 16px">Enjoy eating out with friends once or twice a week.</span></h4></label>
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="Q6" value="5"> 5-Stongly Agree </label>
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="Q6" value="4"> 4-Agree </label>
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="Q6" value="3"> 3-Mmmehhh </label>
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="Q6" value="2"> 2-Disagree </label>
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="Q6" value="1"> 1-Strongly Disagree </label>
+              </div>
+          </fieldset>
+          <fieldset class="form-group">
+             <label for="Question 7"><h4>Question 7: <span style="font-size: 16px">Always respond to friends' posts on social media.</span></h4></label>
+             <div class="form-check-inline">
+               <label class="form-check-label">
+                 <input type="radio" class="form-check-input" name="Q7" value="5"> 5-Stongly Agree </label>
+               <label class="form-check-label">
+                 <input type="radio" class="form-check-input" name="Q7" value="4"> 4-Agree </label>
+               <label class="form-check-label">
+                 <input type="radio" class="form-check-input" name="Q7" value="3"> 3-Mmmehhh </label>
+               <label class="form-check-label">
+                 <input type="radio" class="form-check-input" name="Q7" value="2"> 2-Disagree </label>
+               <label class="form-check-label">
+                 <input type="radio" class="form-check-input" name="Q7" value="1"> 1-Strongly Disagree </label>
+             </div>
+          </fieldset>
+          <fieldset class="form-group">
+             <label for="Question 8"><h4>Question 8: <span style="font-size: 16px">Rock music is better than rap music.</span></h4></label>
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="Q8" value="5"> 5-Stongly Agree </label>
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="Q8" value="4">  4-Agree </label>
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="Q8" value="3"> 3-Mmmehhh </label>
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="Q8" value="2"> 2-Disagree </label>
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="Q8" value="1"> 1-Strongly Disagree </label>
+            </div>
+          </fieldset>
+          <fieldset class="form-group">
+             <label for="Question 9"><h4>Question 9: <span style="font-size: 16px">When the weekend comes, its time to party.</span></h4></label>
+           <div class="form-check-inline">
+             <label class="form-check-label">
+               <input type="radio" class="form-check-input" name="Q9" value="5"> 5-Stongly Agree </label>
+             <label class="form-check-label">
+               <input type="radio" class="form-check-input" name="Q9" value="4"> 4-Agree </label>
+             <label class="form-check-label">
+               <input type="radio" class="form-check-input" name="Q9" value="3"> 3-Mmmehhh </label>
+             <label class="form-check-label">
+               <input type="radio" class="form-check-input" name="Q9" value="2"> 2-Disagree </label>
+             <label class="form-check-label">
+               <input type="radio" class="form-check-input" name="Q9" value="1"> 1-Strongly Disagree </label>
+           </div>
+         </fieldset>
+          <fieldset class="form-group">
+            <label for="Question 10"><h4>Question 10: <span style="font-size: 16px">I keep in close contact with my childhood friends.</span></h4></label>
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="Q10" value="5"> 5-Stongly Agree </label>
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="Q10" value="4"> 4-Agree </label>
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="Q10" value="3"> 3-Mmmehhh </label>
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="Q10" value="2"> 2-Disagree </label>
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="Q10" value="1"> 1-Strongly Disagree </label>
+            </div>
+          </fieldset>
+        <div id="incompleteMessage" style="color: red; display: none;" ></div>
+          <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      </div>
 
-
-
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            <p id="matchingName"></p>  <!--added for modal display-->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script type="text/javascript" src="../assets/javascript/app.js"></script>
+<script type="text/javascript" src="/assets/javascript/app.js"></script>
 
 </html>
