@@ -23,7 +23,7 @@ $(document).ready(function() {
     if (formComplete() == true) {
       var newFriend = {
           name: $("#name").val().trim(),
-          sex: $("input:radio[name ='sex']:checked").val(),
+          photo_url: $("#photo").val().trim(),
           scores: [
             $("input:radio[name ='Q1']:checked").val(),
             $("input:radio[name ='Q2']:checked").val(),
@@ -39,6 +39,7 @@ $(document).ready(function() {
         }
 
       $("#name").val('');
+      $("#photo").val('');
       $("input:radio").prop('checked', false);
 
       var currentURL = window.location.origin;
@@ -46,8 +47,8 @@ $(document).ready(function() {
       $.post(currentURL + "/api/friends", newFriend, function(data) {
 
         // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-        $("#matchingName").html('Best Match: ' + data.name + ' Sex: ' + data.sex);
-
+        $("#matchingName").html('Best Match: ' + data.name);
+        $("#matchingPhoto").attr('src', data.photo_url);
         $("#myModal").modal('toggle');
       });
     } else {
